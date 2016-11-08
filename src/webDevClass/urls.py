@@ -20,7 +20,8 @@ from getServed import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
-
+		url(r'^login/$', views.loginPage, name='loginPage'),
+		url(r'^search/$', views.searchResult, name='searchResult'),
 ]
 
 
