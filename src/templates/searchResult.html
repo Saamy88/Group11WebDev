@@ -1,0 +1,66 @@
+{% extends "header.html" %}	
+
+{% block content %}
+		
+		<!-- search result zone -->
+		
+		<!--for result in results-->
+	
+	<h3>By name:</h3>
+	<div class="container">
+		<div class="row">
+			<section class="col-xs-3">
+				<p>
+					<img class="img-responsive img-circle" src="{% static 'getServed/img/itlogo.jpg'%}" alt="Chania">
+				</p>
+				<!--{{ result.pic}}-->
+			</section>
+			
+			<section class="col-xs-3">
+				<p>
+					this is a restaurant's name
+				</p>
+				
+				<!--{{ result.name}}-->
+			</section>
+				
+			<section class="col-xs-3">
+				<p>
+					this is a restaurant's star rating
+				</p>
+				<!--{{ result.rating}}-->
+			</section>
+		</div>
+	</div>
+		
+		<!--endfor-->
+	
+	<h3>By type:</h3>
+	<!--for result in results-->
+	<div class="container">
+		<div class="row">
+			<section class="col-xs-3">
+				<p>
+					<img class="img-responsive img-circle" src="{% static 'getServed/img/itlogo.jpg'%}" alt="Chania">
+				</p>
+				<!--{{ result.pic}}-->
+			</section>
+			
+			<section class="col-xs-3">
+				<p>
+					this is a restaurant's name
+				</p>
+				
+				<!--{{ result.name}}-->
+			</section>
+				
+			<section class="col-xs-3">
+				<p>
+					this is a restaurant's star rating
+				</p>
+				<!--{{ result.rating}}-->
+			</section>
+		</div>
+	</div>
+	<!--endfor-->
+	{% endblock %}

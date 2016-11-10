@@ -20,6 +20,14 @@ from getServed import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
+    url(r'^login/$', views.login, name='login'),
+    url(r'^signup/$', views.signup, name='signup'),
+    #url(r'^about/$', views.about, name='about'),
+    url(r'^submit/$', views.submit, name='submit'),
+		url(r'^badLogin/$', views.badLogin, name='badLogin'),
+		url(r'^badName/$', views.badName, name='badName'),
+		url(r'^restProfile/$', views.restProfile, name='profile'),
+		url(r'^search/$', views.searchResult, name='search'),
 
 ]
 
